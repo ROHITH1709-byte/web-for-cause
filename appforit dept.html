@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">TravelWorld</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#bookings">Book Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <h1>Discover New Horizons</h1>
+            <p>Plan your next adventure</p>
+            <a href="#destinations" class="cta-button">Explore Now</a>
+        </div>
+        <!-- 3D Canvas Scene -->
+        <div id="hero-3d-scene"></div>
+    </section>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-cards">
+            <div class="card">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>City of Lights</p>
+            </div>
+            <div class="card">
+                <img src="tokyo.jpg" alt="Tokyo">
+                <h3>Tokyo</h3>
+                <p>Vibrant Capital</p>
+            </div>
+            <div class="card">
+                <img src="new-york.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>The Big Apple</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="bookings">
+        <h2>Book Your Trip</h2>
+        <form id="booking-form">
+            <label for="destination">Choose Destination:</label>
+            <select id="destination" name="destination">
+                <option value="paris">Paris</option>
+                <option value="tokyo">Tokyo</option>
+                <option value="new-york">New York</option>
+            </select>
+            <label for="date">Travel Date:</label>
+            <input type="date" id="date" name="date">
+            <button type="submit">Fake Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 TravelWorld. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
